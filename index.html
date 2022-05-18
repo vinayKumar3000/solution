@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Boat Ride Bill Automation</title>
+    <style>
+      input[type="number"] {
+        width: 98%;
+      }
+      input[type="text"] {
+        width: 98%;
+      }
+      input[type="date"] {
+        width: 98%;
+      }
+      input[type="email"] {
+        width: 98%;
+      }
+      input[type="tel"] {
+        width: 98%;
+      }
+      select {
+        width: 98%;
+      }
+      body {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        background-size: 60%;
+      }
+      form {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 50%;
+      }
+      h1 {
+        background-color: #00cc66;
+        color: #ffffff;
+        font-family: Courier New;
+        font-style: italic;
+        text-align: center;
+      }
+      td,
+      th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      #main {
+        background-color: #9999ff;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        color: #ffffff;
+        font-weight: bold;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      #result {
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Boat Ride Bill Automation</h1>
+      <form id="form1">
+        <table>
+          <tr>
+            <td>Customer Name</td>
+            <td>
+              <input
+                type="text"
+                id="cname"
+                name="cname"
+                placeholder="Customer Name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Phone Number</td>
+            <td>
+              <input
+                type="tel"
+                id="phno"
+                name="phno"
+                placeholder="Phone Number"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>
+              <input type="email" id="email" name="email" placeholder="Email" />
+            </td>
+          </tr>
+          <tr>
+            <td>Number of Persons</td>
+            <td>
+              <input
+                type="text"
+                id="noOfPersons"
+                name="noOfPersons"
+                placeholder="Number of Persons"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Boat Type</td>
+            <td>
+              <select id="btype" name="btype">
+                <option id="2seater" value="2 Seater Boat">
+                  2 Seater Pedal Boat
+                </option>
+                <option id="4seater" value="4 Seater Boat">
+                  4 Seater Pedal Boat
+                </option>
+                <option id="8seater" value="8 Seater Boat">
+                  8 Seater Motor Boat
+                </option>
+                <option id="15seater" value="15 Seater Motor Boat">
+                  15 Seater Motor Boat
+                </option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Travel Duration in Hours</td>
+            <td><input type="number" id="duration" name="duration" /></td>
+          </tr>
+        </table>
+        <br />
+        <p>
+          <input type="submit" id="submit" name="submit" value="Book Ride" />
+        </p>
+        <div id="result"></div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
